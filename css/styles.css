@@ -28,6 +28,11 @@ main {
 	margin: 0 auto;
 }
 
+.latest img {
+	margin: 0 auto;
+	display: block;
+}
+
 
 
 
@@ -68,6 +73,24 @@ main {
 	}
 }
 
+@media all and (min-width: 550px) {
+
+	.latest img {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.latest {
+		margin-bottom: 40px;
+	}
+
+	.latest:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
 /*Desktop*/
 
 @media all and (min-width: 780px) {
@@ -81,10 +104,6 @@ main {
 	#featured div {
 		width: 38%;
 		float: right;
-	}
-
-	#featured {
-		background-color: red;
 	}
 
 	#featured:after {
