@@ -1,3 +1,5 @@
+/*Mobile*/
+
 nav ul {
 	display: none;
 }
@@ -8,6 +10,20 @@ nav ul {
 
 nav {
 	background-color: black;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+#featured img {
+	display: block;
+	margin: 0 auto;
+}
+
+main {
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -23,8 +39,7 @@ nav {
 
 
 
-
-
+/*Tablet, Desktop*/
 
 @media all and (min-width: 480px) {
 
@@ -52,6 +67,48 @@ nav {
 		text-decoration: none;
 	}
 }
+
+/*Desktop*/
+
+@media all and (min-width: 780px) {
+
+	#featured img {
+		float: left;
+		width: 60%;
+		margin-right: 10px;
+	}
+
+	#featured div {
+		width: 38%;
+		float: right;
+	}
+
+	#featured {
+		background-color: red;
+	}
+
+	#featured:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
